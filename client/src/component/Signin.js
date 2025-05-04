@@ -14,7 +14,7 @@ export default function Signin() {
             password,
         };
         axios
-        .post("http://localhost:5000/user/register",data)
+        .post("https://creator-dashboard-server.onrender.com/user/register",data)
         .then(()=>{
             navigate('/login');
         })
