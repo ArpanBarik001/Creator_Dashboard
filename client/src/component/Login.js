@@ -12,7 +12,7 @@ export default function Login() {
                 password,
             };
             axios
-            .post("http://localhost:5000/auth/login",data)
+            .post("https://creator-dashboard-server.onrender.com/auth/login",data)
             .then((response)=>{
                 localStorage.setItem("token",response.data.token);
                 localStorage.setItem("userRole",response.data.user.role);
@@ -28,7 +28,7 @@ export default function Login() {
           };
             const triggerAction = async (path) => {
                 try {
-                  await axios.post(`http://localhost:5000/auth/earn/${path}`, {}, { headers });
+                  await axios.post(`https://creator-dashboard-server.onrender.com/auth/earn/${path}`, {}, { headers });
                 //   setMessage(res.data.message);
                 alert("Earn credit succesfully +10");
                 } catch (err) {
