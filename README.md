@@ -5,6 +5,7 @@ A full-stack MERN application that allows creators to manage their content, trac
 ## Features
 
 - **User Authentication**: Signup, login, and protected routes using JWT.
+- **Search Feed**: User can search their topic releated post in search bar onlu provide the topic name.
 - **Creator Dashboard**: View and manage your content easily.
 - **Saved Posts**: Save and retrieve content via the backend API.
 - **Credit Points**: Earn points for succesful login daily and engaging with feed.
