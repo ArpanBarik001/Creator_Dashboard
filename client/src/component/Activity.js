@@ -13,11 +13,11 @@ export default function Activity() {
   const token = localStorage.getItem("token");
   const fetchPosts = async () => {
     try {
-      const savedRes = await axios.get("http://localhost:5000/auth/saved-posts", {
+      const savedRes = await axios.get("https://creator-dashboard-server.onrender.com/auth/saved-posts", {
         headers: { Authorization: `${token}` },
       });
 
-      const reportedRes = await axios.get("http://localhost:5000/auth/reported-posts", {
+      const reportedRes = await axios.get("https://creator-dashboard-server.onrender.com/auth/reported-posts", {
         headers: { Authorization: `${token}` },
       });
 
@@ -35,7 +35,7 @@ export default function Activity() {
 
   const fetchCredits = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/auth/credits", { headers });
+      const res = await axios.get("https://creator-dashboard-server.onrender.com/auth/credits", { headers });
       setCredits(res.data.credits);
       setCreditLog(res.data.creditLog);
     } catch (err) {
