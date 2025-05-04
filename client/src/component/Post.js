@@ -16,7 +16,7 @@ export default function Post({post}) {
   };
     const triggerAction = async (path) => {
         try {
-          await axios.post(`http://localhost:5000/auth/earn/${path}`, {}, { headers });
+          await axios.post(`https://creator-dashboard-server.onrender.com/auth/earn/${path}`, {}, { headers });
         //   setMessage(res.data.message);
         alert("Earn credit succesfully +5");
         } catch (err) {
@@ -35,7 +35,7 @@ export default function Post({post}) {
     const handleSave = async () => {
         try {
           await axios.post(
-            "http://localhost:5000/auth/save-post",
+            "https://creator-dashboard-server.onrender.com/auth/save-post",
             { post: formatPost(post) },
             { headers: { Authorization: `${token}` } }
           );
@@ -48,7 +48,7 @@ export default function Post({post}) {
       const handleReport = async () => {
         try {
           await axios.post(
-            "http://localhost:5000/auth/report-post",
+            "https://creator-dashboard-server.onrender.com/auth/report-post",
             { post: formatPost(post) },
             { headers: { Authorization: `${token}` } }
           );
