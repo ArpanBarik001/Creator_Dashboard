@@ -10,7 +10,7 @@ export default function AdminDashboard() {
     const token = localStorage.getItem("token");
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/auth/current", {
+        const res = await axios.get("https://creator-dashboard-server.onrender.com/auth/current", {
           headers: {
             Authorization: `${token}`
           }
