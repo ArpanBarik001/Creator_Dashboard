@@ -6,6 +6,9 @@ import login from './routes/login.js';
 import passport from 'passport';
 import { password } from './passport.js';
 import path from 'path';
+import {fileURLToPath} from 'url';
+const _filename = fileURLToPath(import.meta.url);
+const _dirname = path.dirname(_filename);
 
 import cors from 'cors';
 import { createAdminAccount } from './service/admin.js';
