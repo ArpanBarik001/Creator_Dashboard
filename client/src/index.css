@@ -202,3 +202,81 @@ h1{
 .section {
   margin-top: 10px;
 }
+
+
+
+/* ===== Responsive Design Enhancements ===== */
+
+/* Center container for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .dashboard button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .reddit-feed-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .post h2 {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .user-posts, .admin-dashboard {
+    padding: 10px;
+  }
+
+  .post-card, .user-card {
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .post h2 {
+    font-size: 1rem;
+  }
+
+  .dashboard button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+}
+
