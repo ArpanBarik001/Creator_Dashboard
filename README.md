@@ -11,7 +11,8 @@ A full-stack MERN application that allows creators to manage their content, trac
 - **Credit Points**: Earn points for succesful login daily and engaging with feed.
 - **MERN Stack**: Uses MongoDB, Express, React, and Node.js.
 
----
+🔗 Live Demo Link:https://creator-dashboard-client.onrender.com
+
 
 ## Getting Started – Run Locally
 
